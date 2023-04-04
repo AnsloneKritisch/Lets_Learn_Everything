@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="sample">Hello World</div>
+
+<div id="sample1">Hello World2</div>
+
+
+<a href="#" onclick="CopyToClipboard('sample');return false;">Copy Text</a>
+
+<a href="#" onclick="CopyToClipboard('sample1');return false;">Copy Text 2 </a>
+
+<script>
+function CopyToClipboard(id)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+}
+
+
+</script>
+</body>
+</html>
