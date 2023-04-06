@@ -1,7 +1,19 @@
+
+
 #navcol{
   background-color: black;
   border-bottom: 1px solid white;
+  position: fixed;
+  top: 0;
 }
 li{
   padding-left: 40px;
+}
+
+.container-fluid {
+  margin-top: 80px; /* or adjust the value to fit your design */
+}
+
+.vnav{
+  background-color: black;
 }
